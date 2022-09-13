@@ -1,0 +1,42 @@
+POLYMORPHISM
+What does the word 'polymorphism' mean?
+It means 'many forms'. 
+
+What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+It inherits attributes/methods from a "superclass", but does different things with them. For example, 
+an Animal superclass might have a method called makeSound(), and both a Dog subclass and Cat subclass could 
+inherit this method. However, when the dog makes a sound, it might return a string that says "bark", 
+and the cat "meow". These are examples of overriding, which is polymorphism.
+
+What can we use to implement polymorphism in Java?
+Inheritance and Interfaces 
+
+How many 'forms' can an object take when using polymorphism?
+As many forms as the programmer wants.
+
+Give an example of when you could use polymorphism.
+When you have many classes that share a commonality. You could have a Car class, a Van class and a Bus
+class. An interface called IDrive have a drive method that all three vehicles would use.  
+
+Composition and Aggregation
+What do we mean by 'composition' in reference to object-oriented programming?
+Where Inheritance sees object "IS A" object, Composition is "A PART OF" an object. An object is "composed"
+of other objects.
+
+When would you use composition? Provide a simple example in Java.
+A Car class would be composed of an Engine and Tyres, both classes their own. The car cannot exist 
+without the engine and tyres. If the car went, so too would the instances of engine and tyres.
+
+Give a difference between composition and aggregation?
+Aggregation is similar to composition except the objects can exist separately from the object that contains them.
+A Car has a Driver. If the Car went, the Driver would still exist.  
+
+What is/are the advantage(s) of using composition/aggregation?
+Composition is more flexible than inheritance, building relational components over trying to find commonality
+and building a more rigid relationship tree.
+
+When using composition, when an object is destroyed, what happens to all the objects it is composed of?
+They are also destroyed. They co-exist and are dependent on one another. 
+
+When using aggregation, when an object is destroyed, what happens to all the objects it is composed of?
+They can still exist with their own attributes/methods.
